@@ -2,27 +2,40 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
+    <title>Oliver's Project</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
         header {
             height: 100%;
             overflow: auto;
             position: relative;
             /* background-color: black; */
         }
-        .concol{margin: 0 auto;}
+
+        .center {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {}
     </style>
 </head>
 
 <body>
-    <header>
+
+    
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Oliver's Project</a>
+                <a class="navbar-brand" href="#demo">Oliver's Project</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
@@ -30,29 +43,30 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">News</a>
+                            <a class="nav-link" href="#news">News</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Profile</a>
+                            <a class="nav-link" href="#profile">Profile</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contect</a>
+                            <a class="nav-link" href="#contect">Contect</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown">Projects</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Class-C licence</a></li>
-                                <li><a class="dropdown-item" href="#">PhP-Calendar</a></li>
-                                <li><a class="dropdown-item" href="#">Comming-Soon</a></li>
+                                <li><a class="dropdown-item" href="#section1">Class-C licence</a></li>
+                                <li><a class="dropdown-item" href="#section2">PhP-Calendar</a></li>
+                                <li><a class="dropdown-item" href="#section3">Comming-Soon</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+       
         <!-- Carousel -->
-        <div id="demo" class="carousel slide" data-bs-ride="carousel" style="height: 100%;height:100%;">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
             <!-- Indicators/dots -->
             <div class="carousel-indicators">
@@ -81,7 +95,7 @@
                     <img src="./pictures/3.jpg" alt="taipei" class="d-block" style="width:100%;height:100%;">
                     <div class="carousel-caption">
                         <h3>Taipei</h3>
-                        <p>Getting in to business</p>
+                        <p>Getting into business</p>
                     </div>
                 </div>
             </div>
@@ -94,182 +108,110 @@
                 <span class="carousel-control-next-icon"></span>
             </button>
         </div>
-    </header>
+  
 
-
-
+    <br>
+    <br>
+    <div class="mt-4 p-5 bg-warning text-black rounded text-center" id="news">
+        <h1>This website is still under developement</h1>
+        <p>please ignore any problem</p>
     </div>
-    <div class="container-fluid mt-5">
-        <ul class="nav nav-tabs justify-content-around" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
-                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
-                    type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
-            </li>
 
-        </ul>
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
-                tabindex="0">
-                <div class="row mt-5 mb-5">
-                    <div class="col-12 col-sm-4 mb-3">
-                        <div class="card mx-auto" style="width:400px">
-                            <img class="card-img-top" src="https://picsum.photos/id/1004/300/300" alt="Card image">
-                            <div class="card-body">
-                                <h4 class="card-title">John Doe</h4>
-                                <p class="card-text">Some example text.</p>
-                                <a href="#" class="btn btn-primary">See Profile</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-4 mb-3">
-                        <div class="card mx-auto" style="width:400px">
-                            <img class="card-img-top" src="https://picsum.photos/id/1050/300/300" alt="Card image">
-                            <div class="card-body">
-                                <h4 class="card-title">John Doe</h4>
-                                <p class="card-text">Some example text.</p>
-                                <a href="#" class="btn btn-primary">See Profile</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-4 mb-3">
-                        <div class="card mx-auto" style="width:400px">
-                            <img class="card-img-top" src="https://picsum.photos/id/1020/300/300" alt="Card image">
-                            <div class="card-body">
-                                <h4 class="card-title">John Doe</h4>
-                                <p class="card-text">Some example text.</p>
-                                <a href="#" class="btn btn-primary">See Profile</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                <div class="container mt-3">
-                    <h2>Hover Rows</h2>
-                    <p>The .table-hover class enables a hover state (grey background on mouse over) on table rows:</p>
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th>Firstname</th>
-                                <th>Lastname</th>
-                                <th>Email</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>John</td>
-                                <td>Doe</td>
-                                <td>john@example.com</td>
-                            </tr>
-                            <tr>
-                                <td>Mary</td>
-                                <td>Moe</td>
-                                <td>mary@example.com</td>
-                            </tr>
-                            <tr>
-                                <td>July</td>
-                                <td>Dooley</td>
-                                <td>july@example.com</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+    <br>
+    <br>
+    <br>
 
-                <div class="container mt-3">
-                    <h2>Accordion Example</h2>
-                    <p><strong>Note:</strong> The <strong>data-bs-parent</strong> attribute makes sure that all
-                        collapsible elements under the specified parent will be closed when one of the collapsible item
-                        is shown.</p>
-                    <div id="accordion">
-                        <div class="card">
-                            <div class="card-header">
-                                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
-                                    Collapsible Group Item #1
-                                </a>
-                            </div>
-                            <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
-                                    Collapsible Group Item #2
-                                </a>
-                            </div>
-                            <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
-                                    Collapsible Group Item #3
-                                </a>
-                            </div>
-                            <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab"
-                tabindex="0">
 
+
+
+    <div id="section1" class="container-fluid bg-dark" style="padding:100px 20px; text-align: center;">
+        <h1>My Front-end Project</h1>
+        <p>
+        <h4>C-class lisense act I </h4>
+        </p>
+        <p><img src="./pictures/擷0取_2022_11_15_16_03_26_140.jpg" alt="" style="max-width: 60%;
+            height: auto;"></p>
+    </div>
+
+    <div id="section2" class="container-fluid bg-secondary text-white" style="padding:100px 20px; text-align: center;">
+        <h1>My Back-end Project</h1>
+        <p>
+        <h4>PHPerpetual calendar</h4>
+        </p>
+        <p><img src="./pictures/擷取_2022_11_15_16_10_20_44.png" alt="" style="max-width: 80%;
+            height: auto;"></p>
+    </div>
+
+    <div id="section3" class="container-fluid  text-white" style="padding:100px 20px; text-align: center;">
+        <h1>My PS Project</h1>
+        <p>
+        <h4>Travel Guide</h4>
+        </p>
+        <p class="S50"><img src="./pictures/tour-guide-022.jpg" alt="" style="max-width: 40%;
+            height: auto;"></p>
+    </div>
+
+<hr>
+    <div id="profile"></div>
+    <h3 style="text-align: center;">My profile</h3>
+    
+    <br>
+    <div class="row justify-content-center">
+        <div class="col"></div>
+
+        <div class="col">
+            <div class="card">
+                <img src="https://picsum.photos/id/237/300/300" class="card-img-top" alt="...">
+                <div class="card-body text-center bg-dark">
+                    <h3 class="card-title">Oliver Lin</h3>
+                    <p class="card-text">If threre is any questaion press the botton below</p>
+                    <a href="#contect" class="btn btn-primary">Contect Me</a>
+                </div>
             </div>
         </div>
+        <div class="col"></div>
     </div>
-    <br><br>
+
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
     <!-- youtube google map text-center  -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="contect">
         <div class="row">
             <div class="col-12 col-sm-6 text-center">
-                <iframe width="400" height="300" src="https://www.youtube.com/embed/HfvCMP1eaq8"
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Y-TtZpppGNs"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
             <div class="col-12 col-sm-6 text-center">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime quos libero et voluptates iure autem
-                    reiciendis enim facilis inventore sit?</p>
+                <h3>泰山職業訓練場</h3>
+                <br>
+                <p>Lorem ipsum dolor,
+                    <br> sit amet consectetur adipisicing elit.
+                    <br> Maxime quos libero et voluptates iure autem
+                    reiciendis enim facilis inventore sit?
+                </p>
             </div>
         </div>
     </div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-sm-6 text-center">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime quos libero et voluptates iure autem
-                    reiciendis enim facilis inventore sit?</p>
+                <h3>Clair de lune</h3>
+                <br>
+                <p>Piano piece by Debussy,
+                    <br>third movement of his Suite bergamasque, L. 75 (1905),
+                    <br>inspired by the Verlaine poem
+                </p>
             </div>
             <div class="col-12 col-sm-6 text-center">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3615.492929605777!2d121.5397518!3d25.0173405!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-TW!2stw!4v1667547246696!5m2!1szh-TW!2stw"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7035065347873!2d121.41732691537885!3d25.04413414403832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1667809137062!5m2!1szh-TW!2stw"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
